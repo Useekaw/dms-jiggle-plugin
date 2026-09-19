@@ -1,0 +1,2 @@
+singleton JiggleService 1.0 JiggleService.qml
+singleton JiggleI18n 1.0 JiggleI18n.qml

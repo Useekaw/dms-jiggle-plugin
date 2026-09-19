@@ -1,0 +1,15 @@
+{
+    "id": "jiggle",
+    "name": "Mouse Jiggler",
+    "description": "Start/stop a configurable mouse-jiggle script from the bar, with duration presets and live status.",
+    "version": "1.0.0",
+    "author": "Useekaw",
+    "type": "widget",
+    "capabilities": ["dankbar-widget", "process"],
+    "component": "./JiggleWidget.qml",
+    "icon": "mouse",
+    "settings": "./JiggleSettings.qml",
+    "requires_dms": ">=0.1.0",
+    "requires": ["bash"],
+    "permissions": ["settings_read", "settings_write", "process"]
+}

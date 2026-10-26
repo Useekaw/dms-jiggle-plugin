@@ -1,6 +1,6 @@
 import QtQuick
 import qs.Common
-import qs.Widgets
+import qs.DCommon.Widgets
 import qs.Modules.Plugins
 
 PluginComponent {
@@ -69,7 +69,7 @@ PluginComponent {
                 anchors.centerIn: parent
                 spacing: Theme.spacingXS
 
-                DankIcon {
+                DIcon {
                     name: "mouse"
                     size: root.iconSize
                     color: JiggleService.active ? Theme.primary : Theme.surfaceText
@@ -98,7 +98,7 @@ PluginComponent {
                 anchors.centerIn: parent
                 spacing: Theme.spacingXS
 
-                DankIcon {
+                DIcon {
                     name: "mouse"
                     size: root.iconSize
                     color: JiggleService.active ? Theme.primary : Theme.surfaceText
@@ -132,7 +132,7 @@ PluginComponent {
                 Repeater {
                     model: root.durations
 
-                    DankButton {
+                    DButton {
                         width: parent.width
                         text: modelData.label
                         iconName: "play_arrow"
@@ -145,7 +145,7 @@ PluginComponent {
                     }
                 }
 
-                DankButton {
+                DButton {
                     width: parent.width
                     visible: JiggleService.active
                     text: JiggleI18n.t("stop")
